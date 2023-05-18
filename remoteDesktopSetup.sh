@@ -11,13 +11,12 @@ sudo apt-get -y --assume-yes -q upgrade
 sudo apt-get -y --assume-yes -q install ubuntu-desktop
 sudo apt-get -y -q --assume-yes remove --auto-remove gdm3 
 sudo apt-get -y --assume-yes -q  install slim
-wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
+sudo wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 sudo apt-get -y install --assume-yes ./chrome-remote-desktop_current_amd64.deb
-rm ./chrome-remote-desktop_current_amd64.deb
+sudo rm ./chrome-remote-desktop_current_amd64.deb
 
 #Restore autoservice restart config
-sudo echo /etc/needrestart/needrestart.conf.backup > /etc/needrestart/needrestart.conf
-sudo rm /etc/needrestart/needrestart.conf.backup 
+sudo mv -f /etc/needrestart/needrestart.conf.backup /etc/needrestart/needrestart.conf
 
 
 # Now the systems needs to reboot
