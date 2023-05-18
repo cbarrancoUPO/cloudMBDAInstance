@@ -6,11 +6,11 @@
 sudo cp /etc/needrestart/needrestart.conf /etc/needrestart/needrestart.conf.backup
 sudo sed -i 's/#$nrconf{restart} = '"'"'i'"'"';/$nrconf{restart} = '"'"'a'"'"';/g' /etc/needrestart/needrestart.conf
 
-sudo apt-get -y --assume-yes -qq update
-sudo apt-get -y --assume-yes -qq upgrade
-sudo apt-get -y --assume-yes -qq install ubuntu-desktop
-sudo apt-get remove --auto-remove gdm3 
-sudo apt-get -y --assume-yes -qq  install slim
+sudo apt-get -y --assume-yes -q update
+sudo apt-get -y --assume-yes -q upgrade
+sudo apt-get -y --assume-yes -q install ubuntu-desktop
+sudo apt-get -y -q --assume-yes remove --auto-remove gdm3 
+sudo apt-get -y --assume-yes -q  install slim
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 sudo apt-get -y install --assume-yes ./chrome-remote-desktop_current_amd64.deb
 rm ./chrome-remote-desktop_current_amd64.deb
