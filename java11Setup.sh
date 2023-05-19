@@ -11,3 +11,5 @@ sudo mv jdk_home.sh /etc/profile.d/jdk_home.sh
 
 # Load JAVA_HOME right now
 source /etc/profile.d/jdk_home.sh
+
+echo "Done. JAVA_HOME set to $JAVA_HOME"
