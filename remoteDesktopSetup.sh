@@ -9,8 +9,6 @@ sudo sed -i 's/#$nrconf{restart} = '"'"'i'"'"';/$nrconf{restart} = '"'"'a'"'"';/
 sudo apt-get -y --assume-yes -qqq update
 sudo apt-get -y --assume-yes -qqq upgrade
 sudo apt-get -y --assume-yes -qq --no-install-recommends install ubuntu-desktop gnome-software firefox
-#sudo apt-get -y --assume-yes -qq remove --auto-remove gdm3 thunderbird
-#sudo apt-get -y --assume-yes -qq  install slim gnome-software firefox
 sudo wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 sudo apt-get -y install --assume-yes -qqq ./chrome-remote-desktop_current_amd64.deb
 sudo rm ./chrome-remote-desktop_current_amd64.deb
