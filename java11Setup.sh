@@ -6,9 +6,9 @@ sudo apt-get -y --assume-yes -qq install openjdk-8-jre-headless
 
 # Set JAVA_HOME for all users.
 
-cat<<EOF > jdk_home.sh
-export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:/bin/java::")
-EOF
+echo "export JAVA_HOME=\$(readlink -f /usr/bin/java | sed \"s:/bin/java::\")" > jdk_home.sh
+sudo chown root jdk_home.sh
 sudo mv jdk_home.sh /etc/profile.d/jdk_home.sh
+
 # Load JAVA_HOME right now
 source /etc/profile.d/jdk_home.sh
