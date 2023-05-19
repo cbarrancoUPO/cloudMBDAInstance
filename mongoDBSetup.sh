@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Following instruction in https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/
+# Following instructions in https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/
 
 sudo apt-get -y --assume-yes -qq install gnupg
 
@@ -17,5 +17,5 @@ sudo apt-get install -y --assume-yes -qq mongodb-org
 sudo systemctl start mongod
 sudo systemctl enable mongod
 
-echo "Done. Excetute \"sudo systemctl status mongod\" to check MongoDB status".
+echo "Done. Excetute \"sudo systemctl status mongod\" to check MongoDB status"
 echo "You can also check MongoDB by conection with mongosh and sending the folloqing query: \" db.stats()\"."
