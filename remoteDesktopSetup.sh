@@ -18,6 +18,6 @@ sudo mv -f /etc/needrestart/needrestart.conf.backup /etc/needrestart/needrestart
 
 
 # Now the systems needs to reboot
-echo "Ready. Go to https://remotedesktop.google.com/headless and execute the code for Debian after reboot"
+echo "Ready. After reboot, go to https://remotedesktop.google.com/headless and execute the code provided in the page."
 read -t 60 -p "The system needs to reboot. Press any key to inmediate reboot. Otherwise, it will reboot in 60 senconds"
 sudo reboot
