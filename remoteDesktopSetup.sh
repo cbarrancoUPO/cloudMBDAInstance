@@ -12,6 +12,8 @@ sudo apt-get -y --assume-yes -qqq upgrade
 sudo apt-get -y --assume-yes -qqq install ubuntu-desktop
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 sudo apt-get -y install --assume-yes -qqq ./chrome-remote-desktop_current_amd64.deb
+sudo apt --fix-broken install -y
+sudo apt --fix-missing install -y
 rm ./chrome-remote-desktop_current_amd64.deb
 
 #Restore autoservice restart config
