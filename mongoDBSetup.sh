@@ -2,7 +2,7 @@
 
 # Following instructions in https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/
 
-sudo apt-get install gnupg curl
+sudo apt-get  -y --assume-yes -qqq install gnupg curl
 
 curl -fsSL https://pgp.mongodb.com/server-8.0.asc | \
    sudo gpg -o /usr/share/keyrings/mongodb-server-8.0.gpg \
